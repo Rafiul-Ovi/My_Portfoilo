@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafiul Islam Ovi | Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom JS -->
+    <script defer src="script.js"></script>
+  </head>
+  <body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Navbar -->
+
+    <nav class="fixed w-full bg-gray-800 shadow-md z-50">
+      <div
+        class="flex justify-between items-center max-w-6xl mx-auto px-4 py-4"
+      >
+        <!-- Logo / Brand -->
+        <h1 class="text-xl font-bold text-teal-400">Rafiul</h1>
+
+        <!-- Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden focus:outline-none"
+          aria-label="Toggle Menu"
+        >
+          <!-- 3 Bar Icon -->
+          <svg
+            class="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#home" class="hover:text-teal-400">Home</a></li>
+          <li><a href="#about" class="hover:text-teal-400">About</a></li>
+          <li><a href="#skills" class="hover:text-teal-400">Skills</a></li>
+          <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="mobile-menu"
+        class="hidden pl-5 pb-4 flex-col mt-4 space-y-3 md:hidden"
+      >
+        <li><a href="#home" class="block hover:text-teal-400">Home</a></li>
+        <li><a href="#about" class="block hover:text-teal-400">About</a></li>
+        <li><a href="#skills" class="block hover:text-teal-400">Skills</a></li>
+        <li>
+          <a href="#projects" class="block hover:text-teal-400">Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="block hover:text-teal-400">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center text-center pt-20"
+    >
+      <div
+        class="flex flex-col-reverse lg:flex-row md:flex-col-reverse gap-12 lg:gap-20"
+      >
+        <!-- Intro -->
+        <div class="flex flex-col items-center justify-center text-center">
+          <h2 class="text-4xl md:text-6xl font-bold mb-4">
+            Hi, I'm <span class="text-teal-400">Rafiul Islam Ovi</span>
+          </h2>
+          <p class="text-lg md:text-xl text-gray-300 mb-6">
+            Student | Aspiring Developer | Tech Enthusiast
+          </p>
+          <button
+            onclick="scrollToSection('contact')"
+            class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg transition"
+          >
+            Contact Me
+          </button>
+        </div>
+
+        <!-- Image -->
+        <div class="w-96 h-96 bg-gray-800 rounded-full overflow-hidden mx-auto">
+          <img
+            src="images/Rafiul-image.png"
+            alt="Rafiul Islam Ovi"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20">
+      <h3 class="text-3xl font-bold mb-6 text-teal-400">About Me</h3>
+      <p class="text-gray-300 leading-relaxed">
+        I am a motivated student with a strong interest in programming and
+        modern web technologies. I enjoy learning new skills, solving problems,
+        and building practical projects that improve my technical and analytical
+        abilities.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-800 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-10 text-teal-400">Skills</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS / Tailwind</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">DSA</div>
+          <div class="skill-card">Problem Solving</div>
+          <div class="skill-card">Git & GitHub</div>
+          <div class="skill-card">Basic Accounting</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+      <h3 class="text-3xl font-bold mb-10 text-teal-400">Projects</h3>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="project-card">
+          <h4 class="text-xl font-semibold mb-2">Portfolio Website</h4>
+          <p class="text-gray-300">
+            A responsive personal portfolio built with HTML, Tailwind CSS and
+            JavaScript.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h4 class="text-xl font-semibold mb-2">Basic Calculator</h4>
+          <p class="text-gray-300">
+            A responsive basic Calculator built with HTML, Tailwind CSS and
+            JavaScript.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 py-10 md:py-20">
+      <div
+        class="flex flex-col-reverse md:flex-row gap-y-7 md:gap-y-0 justify-between mx-auto max-w-6xl px-6"
+      >
+        <!-- Contact -->
+        <div>
+          <h3 class="text-3xl font-bold mb-6 text-teal-400">Contact</h3>
+          <form
+            action="https://formspree.io/f/mjgbnvgg"
+            method="POST"
+            class="w-full max-w-md mx-auto px-4 sm:px-0"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="w-full mb-4 p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-teal-500"
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="w-full mb-4 p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-teal-500"
+            />
+
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              class="w-full mb-4 p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-teal-500"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full sm:w-auto bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded transition duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Social Media -->
+        <div class="flex flex-col gap-y-5">
+          <h3 class="text-3xl font-bold mb-2 text-teal-400">Social Media</h3>
+          <div class="flex flex-row md:flex-col mx-auto gap-x-24 md: gap-y-10">
+            <!-- GitHub -->
+            <div>
+              <a
+                href="https://github.com/Rafiul-Ovi"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-white transition duration-300"
+                aria-label="GitHub"
+              >
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.56v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.4-1.27.73-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.52.12-3.17 0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 5.8 0c2.2-1.5 3.17-1.18 3.17-1.18.65 1.65.25 2.87.12 3.17.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.28 5.68.42.36.78 1.08.78 2.18v3.23c0 .31.2.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div>
+              <a
+                href="https://www.linkedin.com/in/md-rafiul-islam-2650a72a4"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-blue-500 transition duration-300"
+                aria-label="LinkedIn"
+              >
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M4.98 3.5C3.34 3.5 2 4.84 2 6.48c0 1.63 1.34 2.97 2.98 2.97h.02c1.65 0 2.98-1.34 2.98-2.97C7.96 4.84 6.63 3.5 4.98 3.5zM2.4 21.5h5.16V9.98H2.4V21.5zM9.6 9.98h4.94v1.57h.07c.69-1.3 2.37-2.67 4.88-2.67 5.22 0 6.18 3.44 6.18 7.91v4.71h-5.16v-4.18c0-1-.02-2.29-1.4-2.29-1.4 0-1.61 1.09-1.61 2.22v4.25H9.6V9.98z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Facebook -->
+            <div>
+              <a
+                href="https://www.facebook.com/mdrio.mdrio.3"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-blue-600 transition duration-300"
+                aria-label="Facebook"
+              >
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22.68 0H1.32C.59 0 0 .59 0 1.32v21.36C0 23.41.59 24 1.32 24h11.49v-9.29H9.69V11.1h3.12V8.41c0-3.1 1.89-4.79 4.65-4.79 1.32 0 2.45.1 2.78.14v3.22h-1.9c-1.49 0-1.78.71-1.78 1.75v2.29h3.56l-.46 3.61h-3.1V24h6.08c.73 0 1.32-.59 1.32-1.32V1.32C24 .59 23.41 0 22.68 0z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-900 text-gray-500">
+      © 2025 Rafiul Islam Ovi. All rights reserved.
+    </footer>
+  </body>
+</html>
