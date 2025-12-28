@@ -228,7 +228,7 @@
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center md:place-items-start"
       >
         <!-- achievement card-1 -->
-        <div class="card card-compact bg-base-100 w-72 shadow-xl">
+        <div class="card card-compact bg-gray-800 w-72 shadow-xl">
           <figure>
             <img src="images/Achievement_1.jpeg" alt="" />
           </figure>
@@ -251,21 +251,59 @@
         <h3 class="text-3xl font-bold mb-10 text-teal-400">Projects</h3>
 
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="project-card">
-            <h4 class="text-xl font-semibold mb-2">Portfolio Website</h4>
-            <p class="text-gray-300">
-              A responsive personal portfolio built with HTML, Tailwind CSS and
-              JavaScript.
-            </p>
-          </div>
+          <!-- Project-1 -->
+          <a
+            href="https://your-live-project-link.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block"
+          >
+            <div
+              class="project-card bg-gray-900 p-5 rounded-xl shadow-lg flex flex-col gap-4 transition transform hover:scale-105 hover:shadow-2xl cursor-pointer"
+            >
+              <h4 class="text-xl font-semibold">Portfolio Website</h4>
 
-          <div class="project-card">
-            <h4 class="text-xl font-semibold mb-2">Basic Calculator</h4>
-            <p class="text-gray-300">
-              A responsive basic Calculator built with HTML, Tailwind CSS and
-              JavaScript.
-            </p>
-          </div>
+              <div class="w-full h-36 overflow-hidden rounded-lg">
+                <img
+                  src="images/project_1.png"
+                  alt="Portfolio Website Project"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <p class="text-gray-300 text-base">
+                A responsive personal portfolio built with HTML, Tailwind CSS
+                and JavaScript.
+              </p>
+            </div>
+          </a>
+
+          <!-- Project-2 -->
+          <a
+            href="https://rafiul-ovi.github.io/Basic_Calculator/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block"
+          >
+            <div
+              class="project-card bg-gray-900 p-5 rounded-xl shadow-lg flex flex-col gap-4 transition transform hover:scale-105 hover:shadow-2xl cursor-pointer"
+            >
+              <h4 class="text-xl font-semibold">Basic Calculator</h4>
+
+              <div class="w-full h-36 overflow-hidden rounded-lg">
+                <img
+                  src="images/project_2.png"
+                  alt="Portfolio Website Project"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <p class="text-gray-300 text-base">
+                A responsive basic calculator built with HTML, Tailwind CSS and
+                JavaScript.
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
