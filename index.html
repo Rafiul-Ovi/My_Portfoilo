@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rafiul Islam Ovi | Portfolio</title>
 
-    <!-- Tailwind CSS CDN -->
+    <!-- DaisyUi & Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom JS -->
     <script defer src="script.js"></script>
+
+    <!-- Devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body class="bg-gray-900 text-gray-100 font-sans">
     <!-- Navbar -->
-
     <nav class="fixed w-full bg-gray-800 shadow-md z-50">
       <div
         class="flex justify-between items-center max-w-6xl mx-auto px-4 py-4"
@@ -48,6 +64,9 @@
           <li><a href="#home" class="hover:text-teal-400">Home</a></li>
           <li><a href="#about" class="hover:text-teal-400">About</a></li>
           <li><a href="#skills" class="hover:text-teal-400">Skills</a></li>
+          <li>
+            <a href="#achievements" class="hover:text-teal-400">Achievements</a>
+          </li>
           <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
           <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
         </ul>
@@ -61,6 +80,11 @@
         <li><a href="#home" class="block hover:text-teal-400">Home</a></li>
         <li><a href="#about" class="block hover:text-teal-400">About</a></li>
         <li><a href="#skills" class="block hover:text-teal-400">Skills</a></li>
+        <li>
+          <a href="#achievements" class="block hover:text-teal-400"
+            >Achievements</a
+          >
+        </li>
         <li>
           <a href="#projects" class="block hover:text-teal-400">Projects</a>
         </li>
@@ -94,10 +118,12 @@
           </button>
         </div>
 
-        <!-- Image -->
-        <div class="w-96 h-96 bg-gray-800 rounded-full overflow-hidden mx-auto">
+        <!-- Image-1 -->
+        <div
+          class="w-96 h-96 bg-gray-800 rounded-full border-teal-500 border-4 overflow-hidden mx-auto"
+        >
           <img
-            src="images/Rafiul-image.png"
+            src="images/Rafiul_image_2.png"
             alt="Rafiul Islam Ovi"
             class="w-full h-full object-cover"
           />
@@ -107,13 +133,29 @@
 
     <!-- About Section -->
     <section id="about" class="max-w-6xl mx-auto px-6 py-20">
-      <h3 class="text-3xl font-bold mb-6 text-teal-400">About Me</h3>
-      <p class="text-gray-300 leading-relaxed">
-        I am a motivated student with a strong interest in programming and
-        modern web technologies. I enjoy learning new skills, solving problems,
-        and building practical projects that improve my technical and analytical
-        abilities.
-      </p>
+      <div
+        class="flex flex-col-reverse lg:flex-row md:flex-col-reverse gap-12 lg:gap-20 justify-center items-center"
+      >
+        <div>
+          <h3 class="text-3xl font-bold mb-6 text-teal-400">About Me</h3>
+          <p class="text-gray-300 text-xl leading-relaxed">
+            I am a motivated student with a strong interest in programming and
+            modern web technologies. I enjoy learning new skills, solving
+            problems, and building practical projects that improve my technical
+            and analytical abilities.
+          </p>
+        </div>
+        <!-- Image-2 -->
+        <div
+          class="w-80 h-80 bg-gray-800 rounded-full border-teal-500 border-4 overflow-hidden mx-auto"
+        >
+          <img
+            src="images/Rafiul_image_1.png"
+            alt="Rafiul Islam Ovi"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
@@ -121,43 +163,106 @@
       <div class="max-w-6xl mx-auto px-6">
         <h3 class="text-3xl font-bold mb-10 text-teal-400">Skills</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="skill-card">HTML</div>
-          <div class="skill-card">CSS / Tailwind</div>
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">Python</div>
-          <div class="skill-card">DSA</div>
-          <div class="skill-card">Problem Solving</div>
-          <div class="skill-card">Git & GitHub</div>
-          <div class="skill-card">Basic Accounting</div>
+          <div class="skill-card">
+            <i class="devicon-c-plain colored text-xl"></i>
+            <span class="text-xl">C</span>
+          </div>
+
+          <div class="skill-card">
+            <i class="devicon-cplusplus-plain colored text-xl"></i>
+            <span class="text-xl">C++</span>
+          </div>
+
+          <div class="skill-card">
+            <i class="devicon-html5-plain colored text-xl"></i>
+            <span class="text-xl">HTML</span>
+          </div>
+
+          <div class="skill-card">
+            <i class="devicon-css3-plain colored text-xl"></i>
+            <span class="text-xl">CSS</span>
+          </div>
+
+          <div class="skill-card">
+            <i class="devicon-tailwindcss-plain colored text-xl"></i>
+            <span class="text-xl">Tailwind</span>
+          </div>
+
+          <div class="skill-card">
+            <i class="devicon-javascript-plain colored text-xl"></i>
+            <span class="text-xl">JavaScript</span>
+          </div>
+
+          <div class="skill-card">
+            <i class="devicon-python-plain colored text-xl"></i>
+            <span class="text-xl">Python</span>
+          </div>
+
+          <div class="skill-card">
+            <i class="devicon-github-original text-xl"></i>
+            <span class="text-xl">GitHub</span>
+          </div>
+
+          <div class="skill-card">
+            <i class="fa-solid fa-calculator text-xl"></i>
+            <span class="text-xl">Basic Accounting</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="max-w-6xl mx-auto px-6 py-20">
+      <h3 class="text-3xl font-bold mb-10 text-teal-400">Achievements</h3>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center md:place-items-start"
+      >
+        <!-- achievement card-1 -->
+        <div class="card card-compact bg-base-100 w-72 shadow-xl">
+          <figure>
+            <img src="images/Achievement_1.jpeg" alt="" />
+          </figure>
+          <div class="card-body">
+            <p class="text-base">
+              Honored to receive this Certificate of Appreciation from RUET.
+            </p>
+            <p class="text-base">
+              Thankful for the opportunity to contribute as a volunteer and be
+              part of a meaningful event.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
-      <h3 class="text-3xl font-bold mb-10 text-teal-400">Projects</h3>
+    <section id="projects" class="bg-gray-800">
+      <div class="max-w-6xl mx-auto px-6 py-20">
+        <h3 class="text-3xl font-bold mb-10 text-teal-400">Projects</h3>
 
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="project-card">
-          <h4 class="text-xl font-semibold mb-2">Portfolio Website</h4>
-          <p class="text-gray-300">
-            A responsive personal portfolio built with HTML, Tailwind CSS and
-            JavaScript.
-          </p>
-        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="project-card">
+            <h4 class="text-xl font-semibold mb-2">Portfolio Website</h4>
+            <p class="text-gray-300">
+              A responsive personal portfolio built with HTML, Tailwind CSS and
+              JavaScript.
+            </p>
+          </div>
 
-        <div class="project-card">
-          <h4 class="text-xl font-semibold mb-2">Basic Calculator</h4>
-          <p class="text-gray-300">
-            A responsive basic Calculator built with HTML, Tailwind CSS and
-            JavaScript.
-          </p>
+          <div class="project-card">
+            <h4 class="text-xl font-semibold mb-2">Basic Calculator</h4>
+            <p class="text-gray-300">
+              A responsive basic Calculator built with HTML, Tailwind CSS and
+              JavaScript.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-800 py-10 md:py-20">
+    <section id="contact" class="bg-gray-900 py-10 md:py-20">
       <div
         class="flex flex-col-reverse md:flex-row gap-y-7 md:gap-y-0 justify-between mx-auto max-w-6xl px-6"
       >
@@ -259,7 +364,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-6 bg-gray-900 text-gray-500">
+    <footer class="text-center py-6 bg-gray-800 text-gray-500">
       © 2025 Rafiul Islam Ovi. All rights reserved.
     </footer>
   </body>
